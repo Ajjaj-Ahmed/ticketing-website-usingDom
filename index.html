@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Ticketing</title>
+  <!-- daisy ui css -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="container mx-auto">
+<header>
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">P-TICKET</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn border-green-500 bg-green-100 font-black text-green-700">Bus <img src="images/bus-logo.png" alt="" class="w-6 h-6"></a>
+        </div>
+      </div>
+    </nav>
+    <div class="banner">
+      <div class="hero min-h-screen" style="background-image:url(images/banner.png);">
+        <div class="text-center text-white">
+            <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with <br>
+              Greenline Paribahan
+            </h1>
+            <p class="mb-5">Greenline is one of the famous transport company in Bangladesh. Last 30 years they have gain the trust from passenger for their services.</p>
+            <button class="btn btn-primary">Buy Tickets</button> 
+        </div>
+      </div>
+    </div>
+</header>
+<main>
+  <section class="offer-section mt-10 ">
+    <h1 class="text-black text-4xl font-bold text-center mb-10">Best offer for You</h1>
+    <div class="flex flex-row gap-10 ">
+      <div class="bg-[#FFBF0F] flex flex-row justify-evenly flex-1 rounded-lg py-10">
+          <div class="mt-8">
+            <h1 class="text-4xl font-bold">15% OFF</h1>
+            <h3 class="text-2xl font-semibold">On your next purchase</h3>
+            <p class="text-gray-500">Use by January 2024</p>
+          </div>
+          <div class="mt-8">
+            <h1 class="text-4xl font-bold">NEW15</h1>
+            <p class="text-gray-500">Coupon Code</p>
+          </div>
+      </div>
+      <div class="bg-[#F78C9C] flex flex-row justify-evenly flex-1 rounded-lg py-10">
+        <div class="mt-8">
+          <h1 class="text-4xl font-bold">20% OFF</h1>
+          <h3 class="text-2xl font-semibold">On your next purchase</h3>
+          <p class="text-gray-500">Use by January 2024</p>
+        </div>
+        <div class="mt-8">
+          <h1 class="text-4xl font-bold">Couple 20</h1>
+          <p class="text-gray-500">Coupon Code</p>
+        </div>
+      </div>
+    </div>
+    <p class="text-center my-10 text-green-600 cursor-pointer">See All Offer</p>
+  </section>
+
+
+  <!-- boaring section -->
+  <section class="ticket-section">
+    <div class="my-10">
+      <h2 class="text-3xl font-semibold text-center">Greenline Paribahan</h2>
+      <p class="text-xl font-medium text-center">Buy Greenline ticket in online and get extra discount.</p>
+    </div>
+
+    <!-- Scheduling section -->
+    <div class="flex flex-row justify-between my-20">
+
+        <div class="w-2/3">
+                <!-- Couch code -->
+              <div class="flex flex-row justify-between my-10">
+                <div>
+                    <div class="flex flex-row gap-5">
+                      <img src="images/bus-logo.png" >
+                      <div>
+                        <h2 class="text-2xl font-semibold">Greenline Paribahan</h2>
+                        <p class="text-gray-600">Coach-009-WEB ! AC_Business</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="flex flex-row bg-green-200 px-8 py-4 gap-2 rounded-2xl">
+                  <img src="images/seat-gray.png" class="text-green-400" >
+                  <h2 class="text-green-700">40 seats left</h2>
+                </div>
+              </div>
+              <!-- Route -->
+              <div class="bg-white text-2xl">
+                  <div class="flex flex-row justify-between mb-5">
+                    <h2>Route</h2>
+                    <h2>Dhaka-Sylhet</h2>
+        
+                  </div>
+                  <hr>
+                  <div class="flex flex-row justify-between mb-5">
+                    <h2>Departure Time</h2>
+                    <h2>9:30 PM</h2>
+                  </div>
+                  <hr>
+              </div>
+              <!-- bording, droping, est time -->
+              <div class="flex flex-row justify-around mt-5">
+                <button type="button" class="bg-gray-300 text-2xl p-3 rounded-xl text-black">Bording Point-Luximpur</button>
+                <button type="button" class="bg-gray-300 text-2xl p-3 rounded-xl text-black">Dropping Point-Bagura</button>
+                <button type="button" class="bg-gray-300 text-2xl p-3 rounded-xl text-black">Est Time-11h</button>
+              </div>
+        </div>
+             <!-- fair section -->
+            <div class="flex flex-col justify-center items-center">
+              <img class="p-4" src="images/fare.png" alt="">
+              <h2 class="text-5xl font-bold">550 Taka</h2>
+              <p class="text-2xl text-gray-400">Per Seat</p>
+            </div>
+          
+      </div>
+  </section>
+
+  <!-- select your seat section -->
+
+  <section class="seat-collection mt-20">
+    <h2 class="text-4xl font-semibold mb-10">Your seat</h2>
+
+
+    <div class="flex flex-row justify-between">
+
+      <div class="flex flex-col w-3/5">
+        <!-- seat image -->
+       <div class="flex flex-row justify-between text-2xl">
+           <div class="flex flex-row gap-2">
+             <img src="images/seat-gray.png" alt="">
+             <h2>Available</h2>
+           </div>
+           <div class="flex flex-row gap-2">
+             <img src="images/seat-green-filled.png" alt="">
+             <h2>Selected</h2>
+           </div>
+     </div>
+ <hr>
+<!-- seat selection  -->
+       <div class="mt-10">
+             <div class="flex flex-row justify-around mb-3 ">
+                 <button>A</button>
+                 <button class="seats"  class="seats" class="btn p-8">A1</button>
+                 <button id="A2"  class="seats" class="btn p-8">A2</button>
+                 <button id="A3"  class="seats" class="btn p-8">A3</button>
+                 <button id="A4"  class="seats" class="btn p-8">A4</button>
+             </div>
+             <div class="flex flex-row justify-around mb-3 ">
+                 <button>B</button>
+                 <button id="B1"  class="seats" class="btn p-8">B1</button>
+                 <button id="B2"  class="seats" class="btn p-8">B2</button>
+                 <button id="B3"  class="seats" class="btn p-8">B3</button>
+                 <button id="B4"  class="seats" class="btn p-8">B4</button>
+             </div>
+             <div class="flex flex-row justify-around mb-3 ">
+                 <button>C</button>
+                 <button  class="seats" class="btn p-8">C1</button>
+                 <button  class="seats" class="btn p-8">C2</button>
+                 <button  class="seats" class="btn p-8">C3</button>
+                 <button  class="seats" class="btn p-8">C4</button>
+             </div>
+             <div class="flex flex-row justify-around mb-3 ">
+                 <button>D</button>
+                 <button  class="seats" class="btn p-8">D1</button>
+                 <button  class="seats" class="btn p-8">D2</button>
+                 <button  class="seats" class="btn p-8">D3</button>
+                 <button  class="seats" class="btn p-8">D4</button>
+             </div>
+       </div>
+  </div>
+
+      <div class="mr-10">
+        <h2 class="text-4xl font-bold">Select Your seat</h2>
+        <hr>
+        <div id="seatInput">
+          <h2 class="taking-seat text-5xl mt-10">Taking seat input</h2>
+          <div id="seatContainer" class="flex flex-row justify-evenly">
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+
+  </section>
+</main>
+</body>
+<script src="js/ticket.js"></script>
+<script src="js/utility.js"></script>
+</html>
