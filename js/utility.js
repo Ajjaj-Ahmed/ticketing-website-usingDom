@@ -12,14 +12,15 @@ let evenTextArray = [];
       const eventText = eventList.innerText;
 
       if(evenTextArray.includes(eventText) === true){
-        // increase the available seat number
 
+        // increase the available seat number
         increaseTheDecreseValue();
 
         removeBackgroundColor(userId);
 
         removeChildFromTable();
 
+        // Decrease the number of seat if select 2nd time.
         decreaseTheIncreaseValue();
       } 
       else{
@@ -29,13 +30,16 @@ let evenTextArray = [];
         addChildToSeatTable(eventText);
 
         evenTextArray.push(eventText);
+
+        // Increase seat number first Time
+        increaseScore('seatNumber');
+
+        // decrease seat number after select any seat
+        decreaseScore('availableSeat'); 
+
       }
       calculateTicketPrice();
-  
-      //increase and decrease score
-
-      increaseScore('seatNumber');
-      decreaseScore('availableSeat'); 
+      
   
     })
   }
@@ -67,14 +71,14 @@ function increaseScore(elementId){
 function increaseTheDecreseValue(){
   const elementText = document.getElementById('availableSeat').innerText;
   const element = parseInt(elementText);
-  const number = element+2;
+  const number = element+1;
   document.getElementById('availableSeat').innerText = number;
 }
 
 function decreaseTheIncreaseValue(){
   const elementText = document.getElementById('seatNumber').innerText;
   const element = parseInt(elementText);
-  const number = element-2;
+  const number = element-1;
   document.getElementById('seatNumber').innerText = number;
 }
  
@@ -84,7 +88,9 @@ function setBackgroundColor(elementId){
   const selectElement = document.getElementById(elementId);
   selectElement.classList.add('bg-orange-400');
   }
-  function removeBackgroundColor(elementId){
+
+//Remove background color
+function removeBackgroundColor(elementId){
   const selectElement = document.getElementById(elementId);
   selectElement.classList.remove('bg-orange-400');
   }
