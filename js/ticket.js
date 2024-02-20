@@ -43,3 +43,20 @@ function calculateTicketPrice(){
   const element =  document.getElementById('totalAmount');
   element.innerText = parseInt(totalMoney);
 }
+
+//Working on input filed
+function userData(){
+const userfield = document.getElementById('input-name');
+const userValue = userfield.value;
+
+const phoneField = document.getElementById('input-phone');
+const phoneValue = phoneField.value;
+
+const emailField = document.getElementById('input-name');
+const emailValue = emailField.value;
+
+const userFulldata = `<p>Thanks Mr/Mrs ${userValue}</p><p> Your Phone: ${phoneValue}</p> <p>Your Email: ${emailValue} </p>`;
+return userFulldata;
+}
+
+

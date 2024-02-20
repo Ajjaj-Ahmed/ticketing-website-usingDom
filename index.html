@@ -250,17 +250,20 @@
 
             <div class="mt-4">
               <p class="text-xl font-medium mb-2">Passenger Name*</p>
-              <input class="p-2 rounded-lg bg-gray-300 border border-gray-200 min-w-full" type="text" placeholder="enter Your name">
+              <input id="input-name" class="p-2 rounded-lg bg-gray-300 border border-gray-200 min-w-full" type="text" placeholder="enter Your name">
             </div>
             <div class="mt-4">
-              <p class="text-xl font-medium mb-2">Phone Number*</p>
-              <input class="p-2 rounded-lg bg-gray-300 border border-gray-200 min-w-full" type="number" placeholder="enter Your name">
+              <p class="text-xl font-medium mb-2"  >Phone Number*</p>
+              <input id="input-phone" class="p-2 rounded-lg bg-gray-300 border border-gray-200 min-w-full" type="number" placeholder="enter Your name">
             </div>
             <div class="mt-4">
               <p class="text-xl font-medium mb-2">Email Address*</p>
-              <input class="p-2 rounded-lg bg-gray-300 border border-gray-200 min-w-full" type="email" placeholder="enter Your name">
+              <input id="input-mail" class="p-2 rounded-lg bg-gray-300 border border-gray-200 min-w-full" type="email" placeholder="enter Your name">
             </div>
-            <button class="btn mt-5 text-white bg-green-600 min-w-full">Next</button>
+            <button class="btn mt-5 text-white bg-green-600 min-w-full" id="submit-btn" 
+            onclick="
+             my_modal_4.showModal();
+            ">Next</button>
             <div class="flex flex-row underline gap-4 text-gray-400 mt-8">
               <a href="#">Terms and Conditions</a>
               <a href="#">Cancellation Policy</a>
@@ -286,6 +289,28 @@
               <img src="images/R.png" class="w-80 h-16">
             </div>
         </div>
+  </section>
+
+  <!-- Modal section -->
+  <section>
+    <!-- You can open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_4" class="modal">
+  <div class="modal-box w-11/12 max-w-5xl">
+    <div class="flex flex-col justify-center items-center gap-5">
+	  <img src="images/success.png" alt="" class="w-44 h-36">
+    	<h2 class="text-center font-semibold">Thank you for Booking Our Bus Seats. </h2>
+     	 <h2 class="text-center font-semibold">We are working hard to find the best service and deals for you.</h2>
+    	
+    	<p>Shortly you will find a confirmation in your email.</p>
+    
+      <form method="dialog">
+        <!-- if there is a button, it will close the modal -->
+        <button class="btn">Continue</button>
+      </form>
+    </div>
+  </div>
+</dialog>
   </section>
 </main>
 </body>
