@@ -48,7 +48,7 @@
               Greenline Paribahan
             </h1>
             <p class="mb-5">Greenline is one of the famous transport company in Bangladesh. Last 30 years they have gain the trust from passenger for their services.</p>
-            <button class="btn btn-primary">Buy Tickets</button> 
+            <button class="btn btn-primary"><a href="#ticket-page">Buy Tickets</a></button> 
         </div>
       </div>
     </div>
@@ -85,7 +85,7 @@
 
 
   <!-- boaring section -->
-  <section class="ticket-section">
+  <section class="ticket-section bg-white">
     <div class="my-10">
       <h2 class="text-3xl font-semibold text-center">Greenline Paribahan</h2>
       <p class="text-xl font-medium text-center">Buy Greenline ticket in online and get extra discount.</p>
@@ -108,7 +108,7 @@
                 </div>
                 <div class="flex flex-row bg-green-200 px-8 py-4 gap-2 rounded-2xl">
                   <img src="images/seat-gray.png" class="text-green-400" >
-                  <h2 class="text-green-700">40 seats left</h2>
+                  <h2 class="text-green-700">40 seatBtn left</h2>
                 </div>
               </div>
               <!-- Route -->
@@ -126,14 +126,14 @@
                   <hr>
               </div>
               <!-- bording, droping, est time -->
-              <div class="flex flex-row justify-around mt-5">
-                <button type="button" class="bg-gray-300 text-2xl p-3 rounded-xl text-black">Bording Point-Luximpur</button>
-                <button type="button" class="bg-gray-300 text-2xl p-3 rounded-xl text-black">Dropping Point-Bagura</button>
-                <button type="button" class="bg-gray-300 text-2xl p-3 rounded-xl text-black">Est Time-11h</button>
+              <div class="flex flex-row justify-around mt-5 mb-10">
+                <button type="button" class="bg-gray-200 text-2xl p-3 rounded-xl text-black">Bording Point-Luximpur</button>
+                <button type="button" class="bg-gray-200 text-2xl p-3 rounded-xl text-black">Dropping Point-Bagura</button>
+                <button type="button" class="bg-gray-200 text-2xl p-3 rounded-xl text-black">Est Time-11h</button>
               </div>
         </div>
              <!-- fair section -->
-            <div class="flex flex-col justify-center items-center">
+            <div class="flex flex-col justify-center items-center mr-20">
               <img class="p-4" src="images/fare.png" alt="">
               <h2 class="text-5xl font-bold">550 Taka</h2>
               <p class="text-2xl text-gray-400">Per Seat</p>
@@ -144,7 +144,7 @@
 
   <!-- select your seat section -->
 
-  <section class="seat-collection mt-20">
+  <section class="seat-collection mt-20 bg-white rounded-lg">
     <h2 class="text-4xl font-semibold mb-10">Your seat</h2>
 
 
@@ -155,61 +155,144 @@
        <div class="flex flex-row justify-between text-2xl">
            <div class="flex flex-row gap-2">
              <img src="images/seat-gray.png" alt="">
-             <h2>Available</h2>
+             <div class="flex flex-row gap-4">
+              <h2>Available </h2>
+              <p id="availableSeat">40</p>
+             </div>
            </div>
            <div class="flex flex-row gap-2">
              <img src="images/seat-green-filled.png" alt="">
+
              <h2>Selected</h2>
            </div>
      </div>
  <hr>
 <!-- seat selection  -->
-       <div class="mt-10">
-             <div class="flex flex-row justify-around mb-3 ">
+       <div class="mt-10 relative" id="ticket-page">
+        
+
+             <div class="flex flex-row justify-around mb-3">
                  <button>A</button>
-                 <button class="seats"  class="seats" class="btn p-8">A1</button>
-                 <button id="A2"  class="seats" class="btn p-8">A2</button>
-                 <button id="A3"  class="seats" class="btn p-8">A3</button>
-                 <button id="A4"  class="seats" class="btn p-8">A4</button>
+                 <button id="a1" class="seatBtn" class="btn">A1</button>
+                 <button id="a2" class="seatBtn" class="btn ">A2</button>
+                 <button id="a3" class="seatBtn" class="btn ">A3</button>
+                 <button id="a4" class="seatBtn" class="btn ">A4</button>
              </div>
              <div class="flex flex-row justify-around mb-3 ">
                  <button>B</button>
-                 <button id="B1"  class="seats" class="btn p-8">B1</button>
-                 <button id="B2"  class="seats" class="btn p-8">B2</button>
-                 <button id="B3"  class="seats" class="btn p-8">B3</button>
-                 <button id="B4"  class="seats" class="btn p-8">B4</button>
+                 <button  id="b1" class="seatBtn" class="btn p-8">B1</button>
+                 <button  id="b2" class="seatBtn" class="btn p-8">B2</button>
+                 <button  id="b3" class="seatBtn" class="btn p-8">B3</button>
+                 <button  id="b4" class="seatBtn" class="btn p-8">B4</button>
              </div>
              <div class="flex flex-row justify-around mb-3 ">
                  <button>C</button>
-                 <button  class="seats" class="btn p-8">C1</button>
-                 <button  class="seats" class="btn p-8">C2</button>
-                 <button  class="seats" class="btn p-8">C3</button>
-                 <button  class="seats" class="btn p-8">C4</button>
+                 <button  id="c1" class="seatBtn" class="btn p-8">C1</button>
+                 <button  id="c2" class="seatBtn" class="btn p-8">C2</button>
+                 <button  id="c3" class="seatBtn" class="btn p-8">C3</button>
+                 <button  id="c4" class="seatBtn" class="btn p-8">C4</button>
              </div>
              <div class="flex flex-row justify-around mb-3 ">
                  <button>D</button>
-                 <button  class="seats" class="btn p-8">D1</button>
-                 <button  class="seats" class="btn p-8">D2</button>
-                 <button  class="seats" class="btn p-8">D3</button>
-                 <button  class="seats" class="btn p-8">D4</button>
+                 <button id="d1" class="seatBtn" class="btn p-8">D1</button>
+                 <button id="d2" class="seatBtn" class="btn p-8">D2</button>
+                 <button id="d3" class="seatBtn" class="btn p-8">D3</button>
+                 <button id="d4" class="seatBtn" class="btn p-8">D4</button>
              </div>
        </div>
   </div>
 
-      <div class="mr-10">
+      <!-- Select your seat section -->
+
+      <div class="mr-15  px-10 bg-white">
         <h2 class="text-4xl font-bold">Select Your seat</h2>
         <hr>
-        <div id="seatInput">
-          <h2 class="taking-seat text-5xl mt-10">Taking seat input</h2>
-          <div id="seatContainer" class="flex flex-row justify-evenly">
-            
-          </div>
+        <div  class="">
+            <div class="flex flex-row gap-1 items-center align-bottom">
+              <h2 class="text-xl font-semibold ">seat</h2>
+              <p id="seatNumber">0</p>
+            </div>
+
+            <!-- table of seat list -->
+
+            <div class="overflow-x-auto">
+              <table id="myTable" class="table">
+                <!-- head -->
+                <thead>
+                  <tr class="text-black text-xl">
+                    <th>Seat Number</th>
+                    <th>Class</th>
+                    <th>Ticket Fare</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td id="seat-number">Cy Ganderton</td>
+                    <td id="seat-class">Quality</td>
+                    <td id="seat-fare">Blue</td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+            </div>
+
+        <!-- End of seat list -->
+         
+          <hr>
+            <div class="flex flex-row justify-between">
+              <h2 class="text-xl font-semibold">Total Price</h2>
+              <h2 class="text-xl font-semibold">BDT 1100</h2>
+            </div>
+
+            <div class="mt-5">
+              <input class="bg-white border p-2 rounded-lg" type="text" placeholder="Have any coupon?">
+              <button type="button" class="bg-green-500 text-white p-2 rounded-lg">Submit</button>
+            </div>
+
+            <div class="flex flex-row justify-between mt-5">
+              <h2 class="text-xl font-semibold">Grand Total</h2>
+              <h2 class="text-xl font-semibold">BDT 1100</h2>
+            </div>
+
+            <div class="mt-4">
+              <p class="text-xl font-medium mb-2">Passenger Name*</p>
+              <input class="p-2 rounded-lg bg-gray-300 border border-gray-200 min-w-full" type="text" placeholder="enter Your name">
+            </div>
+            <div class="mt-4">
+              <p class="text-xl font-medium mb-2">Phone Number*</p>
+              <input class="p-2 rounded-lg bg-gray-300 border border-gray-200 min-w-full" type="number" placeholder="enter Your name">
+            </div>
+            <div class="mt-4">
+              <p class="text-xl font-medium mb-2">Email Address*</p>
+              <input class="p-2 rounded-lg bg-gray-300 border border-gray-200 min-w-full" type="email" placeholder="enter Your name">
+            </div>
+            <button class="btn mt-5 text-white bg-green-600 min-w-full">Next</button>
+            <div class="flex flex-row underline gap-4 text-gray-400 mt-8">
+              <a href="#">Terms and Conditions</a>
+              <a href="#">Cancellation Policy</a>
+            </div>
         </div>
+
         
       </div>
     </div>
 
+  </section>
 
+  <section class="mt-10">
+        <div class="flex flex-row justify-between bg-black text-white p-28">
+            <div class="flex flex-col mb-3">
+              <h1 class="text-3xl font-bold">P-Ticket</h1>
+              <p>P-Ticket is a digital platform to make <br>your daily commuting better.
+              </p>
+            </div>
+    
+            <div class="flex flex-col justify-start gap-5">
+              <p>Download our app</p>
+              <img src="images/R.png" class="w-80 h-16">
+            </div>
+        </div>
   </section>
 </main>
 </body>

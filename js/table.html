@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="overflow-x-auto">
+    <table id="myTable" class="table">
+      <!-- head -->
+      <thead>
+        <tr class="text-black text-xl">
+          <th>Seat Number</th>
+          <th>Class</th>
+          <th>Ticket Fare</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr id="seat-plan">
+          <td id="seat-number">Cy Ganderton</td>
+          <td id="seat-class">Quality</td>
+          <td id="seat-fare">Blue</td>
+        </tr>
+        <!-- row 2 -->
+        <tr>
+          <td>Hart Hagerty</td>
+          <td>Desktop </td>
+          <td>Purple</td>
+        </tr>
+        <!-- row 3 -->
+        <tr>
+          
+          <td>Brice Swyre</td>
+          <td>Tax Accountant</td>
+          <td>Red</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+<script>
+  // Create a new row
+        let newTr = document.createElement('tr');
+        
+        //create cell
+        let seatNumber = document.createElement('td'); // have work with this row
+        seatNumber.textContent = 'A4';
+        let seatClass = document.createElement('td');
+        seatClass.textContent = 'Economy';
+        let seatFare = document.createElement('td');
+        seatFare.textContent = 550
+
+        // Append cells to the new row
+        newTr.appendChild(seatNumber);
+        newTr.appendChild(seatClass);
+        newTr.appendChild(seatFare);
+
+        let table = document.getElementById('myTable');
+        table.appendChild(newTr);
+
+</script>
+</html>
