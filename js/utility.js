@@ -13,20 +13,27 @@ let evenTextArray = [];
 
       if(evenTextArray.includes(eventText) === true){
         // increase the available seat number
-        removeBackgroundColor(userId);
+
         increaseTheDecreseValue();
+
+        removeBackgroundColor(userId);
+
+        removeChildFromTable();
+
         decreaseTheIncreaseValue();
       } 
       else{
+        
         setBackgroundColor(userId);
 
         addChildToSeatTable(eventText);
 
         evenTextArray.push(eventText);
       }
-
+      calculateTicketPrice();
   
       //increase and decrease score
+
       increaseScore('seatNumber');
       decreaseScore('availableSeat'); 
   
